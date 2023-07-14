@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t}from"./chunks/framework.c6d8cbec.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"java/理论基础/设计模式/行为型模式.md","filePath":"java/理论基础/设计模式/行为型模式.md"}'),r={name:"java/理论基础/设计模式/行为型模式.md"};function o(s,_,c,n,p,d){return e(),t("div")}const f=a(r,[["render",o]]);export{m as __pageData,f as default};

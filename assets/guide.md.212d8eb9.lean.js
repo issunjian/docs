@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,V as a}from"./chunks/framework.c6d8cbec.js";const f=JSON.parse('{"title":"欢迎来到SJDocs🏡","description":"","frontmatter":{},"headers":[],"relativePath":"guide.md","filePath":"guide.md"}'),r={name:"guide.md"},s=a("",7),n=[s];function i(c,d,_,h,l,p){return o(),t("div",null,n)}const g=e(r,[["render",i]]);export{f as __pageData,g as default};

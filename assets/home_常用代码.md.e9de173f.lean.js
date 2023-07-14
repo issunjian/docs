@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,V as l}from"./chunks/framework.c6d8cbec.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"home/常用代码.md","filePath":"home/常用代码.md"}'),p={name:"home/常用代码.md"},o=l("",14),e=[o];function t(c,r,y,F,i,E){return a(),n("div",null,e)}const h=s(p,[["render",t]]);export{C as __pageData,h as default};

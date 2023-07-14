@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SmartGloble Class: Handler</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="static/css/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="static/css/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">SmartGloble</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">模块<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-events.html">events</a></li><li><a href="module-olview_handler.html">olview/handler</a></li><li><a href="module-olview.html">olview</a></li><li><a href="module-olimage.html">olimage</a></li><li><a href="module-olvector_handler.html">olvector/handler</a></li><li><a href="module-olvector.html">olvector</a></li><li><a href="module-olplotting_handler.html">olplotting/handler</a></li><li><a href="module-olplotting.html">olplotting</a></li><li><a href="module-csview.html">csview</a></li><li><a href="module-csimage.html">csimage</a></li><li><a href="module-csanimation.html">csanimation</a></li><li><a href="module-csvector_handler.html">csvector/handler</a></li><li><a href="module-csvector.html">csvector</a></li><li><a href="module-csplotting_handler.html">csplotting/handler</a></li><li><a href="module-csplotting.html">csplotting</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">类<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-events.Event.html">events.Event</a></li><li><a href="module-events.Target.html">events.Target</a></li><li><a href="module-olview.Camera.html">olview.Camera</a></li><li><a href="GroupLayerEvent.html">GroupLayerEvent</a></li><li><a href="module-olview.GroupLayer.html">olview.GroupLayer</a></li><li><a href="module-olview_handler.DrawExtent.html">olview/handler.DrawExtent</a></li><li><a href="module-olview_handler.Select.html">olview/handler.Select</a></li><li><a href="">olview.Handler</a></li><li><a href="LayerEvent.html">LayerEvent</a></li><li><a href="module-olview.Layer.html">olview.Layer</a></li><li><a href="module-olview.MouseEventHandler.html">olview.MouseEventHandler</a></li><li><a href="module-olview.Popup.html">olview.Popup</a></li><li><a href="module-olview.ChangeProjectionEvent.html">olview.ChangeProjectionEvent</a></li><li><a href="module-olview.ViewEvent.html">olview.ViewEvent</a></li><li><a href="module-olview.View.html">olview.View</a></li><li><a href="module-olimage.GeographicTileLayer.html">olimage.GeographicTileLayer</a></li><li><a href="module-olimage.GeoqTileLayer.html">olimage.GeoqTileLayer</a></li><li><a href="module-olimage.GoogleTileLayer.html">olimage.GoogleTileLayer</a></li><li><a href="module-olimage.OlLayer.html">olimage.OlLayer</a></li><li><a href="module-olimage.WebMercatorTileLayer.html">olimage.WebMercatorTileLayer</a></li><li><a href="module-olimage.WmsTileLayer.html">olimage.WmsTileLayer</a></li><li><a href="module-olimage.WmtsLayer.html">olimage.WmtsLayer</a></li><li><a href="module-olvector.Arc.html">olvector.Arc</a></li><li><a href="module-olvector.Arch.html">olvector.Arch</a></li><li><a href="module-olvector.BezierSpline.html">olvector.BezierSpline</a></li><li><a href="module-olvector.Circle.html">olvector.Circle</a></li><li><a href="module-olvector.CircleRing.html">olvector.CircleRing</a></li><li><a href="module-olvector.Ellipse.html">olvector.Ellipse</a></li><li><a href="module-olvector.GeodesicPolygon.html">olvector.GeodesicPolygon</a></li><li><a href="module-olvector.GeodesicPolyline.html">olvector.GeodesicPolyline</a></li><li><a href="module-olvector_handler.DrawCirclrEvent.html">olvector/handler.DrawCirclrEvent</a></li><li><a href="module-olvector_handler.DrawCircle.html">olvector/handler.DrawCircle</a></li><li><a href="module-olvector_handler.DrawPointEvent.html">olvector/handler.DrawPointEvent</a></li><li><a href="module-olvector_handler.DrawPoint.html">olvector/handler.DrawPoint</a></li><li><a href="module-olvector_handler.DrawPolygonEvent.html">olvector/handler.DrawPolygonEvent</a></li><li><a href="module-olvector_handler.DrawPolygon.html">olvector/handler.DrawPolygon</a></li><li><a href="module-olvector_handler.DrawPolylineEvent.html">olvector/handler.DrawPolylineEvent</a></li><li><a href="module-olvector_handler.DrawPolyline.html">olvector/handler.DrawPolyline</a></li><li><a href="module-olvector_handler.DrawRectangleEvent.html">olvector/handler.DrawRectangleEvent</a></li><li><a href="module-olvector_handler.DrawRectangle.html">olvector/handler.DrawRectangle</a></li><li><a href="module-olvector_handler.ModifyVectorEvent.html">olvector/handler.ModifyVectorEvent</a></li><li><a href="module-olvector_handler.ModifyVector.html">olvector/handler.ModifyVector</a></li><li><a href="module-olvector_handler.SelectVectorEvent.html">olvector/handler.SelectVectorEvent</a></li><li><a href="module-olvector_handler.SelectVector.html">olvector/handler.SelectVector</a></li><li><a href="module-olvector.Icon.html">olvector.Icon</a></li><li><a href="module-olvector.Label.html">olvector.Label</a></li><li><a href="module-olvector.LabelLine.html">olvector.LabelLine</a></li><li><a href="module-olvector.Pie.html">olvector.Pie</a></li><li><a href="module-olvector.Point.html">olvector.Point</a></li><li><a href="module-olvector.Polygon.html">olvector.Polygon</a></li><li><a href="module-olvector.Polyline.html">olvector.Polyline</a></li><li><a href="module-olvector.Rectangle.html">olvector.Rectangle</a></li><li><a href="module-olvector.Vector.html">olvector.Vector</a></li><li><a href="module-olvector.VectorLayer.html">olvector.VectorLayer</a></li><li><a href="module-olplotting.AlgoSymbol.html">olplotting.AlgoSymbol</a></li><li><a href="module-olplotting.DotSymbol.html">olplotting.DotSymbol</a></li><li><a href="module-olplotting_handler.DrawAlgoSymbolEvent.html">olplotting/handler.DrawAlgoSymbolEvent</a></li><li><a href="module-olplotting_handler.DrawAlgoSymbol.html">olplotting/handler.DrawAlgoSymbol</a></li><li><a href="module-olplotting_handler.DrawDotSymbolEvent.html">olplotting/handler.DrawDotSymbolEvent</a></li><li><a href="module-olplotting_handler.DrawDotSymbol.html">olplotting/handler.DrawDotSymbol</a></li><li><a href="module-olplotting_handler.ModifyPlottingSymbolEvent.html">olplotting/handler.ModifyPlottingSymbolEvent</a></li><li><a href="module-olplotting_handler.ModifyPlottingSymbol.html">olplotting/handler.ModifyPlottingSymbol</a></li><li><a href="module-olplotting_handler.SelectPlottingSymbolEvent.html">olplotting/handler.SelectPlottingSymbolEvent</a></li><li><a href="module-olplotting_handler.SelectPlottingSymbol.html">olplotting/handler.SelectPlottingSymbol</a></li><li><a href="module-olplotting.PlottingLayer.html">olplotting.PlottingLayer</a></li><li><a href="module-olplotting.PlottingSymbol.html">olplotting.PlottingSymbol</a></li><li><a href="module-olplotting.TextSymbol.html">olplotting.TextSymbol</a></li><li><a href="module-csview.Camera.html">csview.Camera</a></li><li><a href="module-csview.GroupLayer.html">csview.GroupLayer</a></li><li><a href="module-csview.Handler.html">csview.Handler</a></li><li><a href="module-csview.Layer.html">csview.Layer</a></li><li><a href="module-csview.MouseEventHandler.html">csview.MouseEventHandler</a></li><li><a href="module-csview.Popup.html">csview.Popup</a></li><li><a href="csview.PrimitiveLayer.html">csview.PrimitiveLayer</a></li><li><a href="module-csview.ViewLoadedEvent.html">csview.ViewLoadedEvent</a></li><li><a href="module-csview.ViewEvent.html">csview.ViewEvent</a></li><li><a href="module-csview.View.html">csview.View</a></li><li><a href="module-csimage.CsLayer.html">csimage.CsLayer</a></li><li><a href="module-csimage.GeographicTileLayer.html">csimage.GeographicTileLayer</a></li><li><a href="module-csimage.GeoqTileLayer.html">csimage.GeoqTileLayer</a></li><li><a href="module-csimage.GoogleTileLayer.html">csimage.GoogleTileLayer</a></li><li><a href="module-csimage.WebMercatorTileLayer.html">csimage.WebMercatorTileLayer</a></li><li><a href="module-csimage.WmsTileLayer.html">csimage.WmsTileLayer</a></li><li><a href="module-csimage.WmtsLayer.html">csimage.WmtsLayer</a></li><li><a href="module-csanimation.AnimationLayer.html">csanimation.AnimationLayer</a></li><li><a href="module-csanimation.AnimationModel.html">csanimation.AnimationModel</a></li><li><a href="AnimationObjectEvent.html">AnimationObjectEvent</a></li><li><a href="module-csanimation.AnimationObject.html">csanimation.AnimationObject</a></li><li><a href="SimpleAnimationDotSymbol.html">SimpleAnimationDotSymbol</a></li><li><a href="SimpleAnimationIcon.html">SimpleAnimationIcon</a></li><li><a href="SimpleAnimationModel.html">SimpleAnimationModel</a></li><li><a href="SimpleAnimationObject.html">SimpleAnimationObject</a></li><li><a href="module-csvector.Arc.html">csvector.Arc</a></li><li><a href="module-csvector.Arch.html">csvector.Arch</a></li><li><a href="module-csvector.Column.html">csvector.Column</a></li><li><a href="module-csvector.Cone.html">csvector.Cone</a></li><li><a href="module-csvector.Cube.html">csvector.Cube</a></li><li><a href="module-csvector.CustomMesh.html">csvector.CustomMesh</a></li><li><a href="module-csvector.Ellipsoid.html">csvector.Ellipsoid</a></li><li><a href="module-csvector.ExtrudeCircle.html">csvector.ExtrudeCircle</a></li><li><a href="module-csvector.ExtrudeEllipse.html">csvector.ExtrudeEllipse</a></li><li><a href="module-csvector.ExtrudePolyline.html">csvector.ExtrudePolyline</a></li><li><a href="module-csvector.GlobePolyline.html">csvector.GlobePolyline</a></li><li><a href="module-csvector.GroundBezierSpline.html">csvector.GroundBezierSpline</a></li><li><a href="module-csvector.GroundCircle.html">csvector.GroundCircle</a></li><li><a href="module-csvector.GroundCircleRing.html">csvector.GroundCircleRing</a></li><li><a href="module-csvector.GroundEllipse.html">csvector.GroundEllipse</a></li><li><a href="module-csvector.GroundIcon.html">csvector.GroundIcon</a></li><li><a href="module-csvector.GroundLabel.html">csvector.GroundLabel</a></li><li><a href="module-csvector.GroundPie.html">csvector.GroundPie</a></li><li><a href="module-csvector.GroundPoint.html">csvector.GroundPoint</a></li><li><a href="module-csvector.GroundPolygon.html">csvector.GroundPolygon</a></li><li><a href="module-csvector.GroundPolyline.html">csvector.GroundPolyline</a></li><li><a href="module-csvector.GroundRectangle.html">csvector.GroundRectangle</a></li><li><a href="module-csvector_handler.DrawGroundPointEvent.html">csvector/handler.DrawGroundPointEvent</a></li><li><a href="module-csvector_handler.DrawGroundPoint.html">csvector/handler.DrawGroundPoint</a></li><li><a href="module-csvector_handler.DrawGroundPolygonEvent.html">csvector/handler.DrawGroundPolygonEvent</a></li><li><a href="module-csvector_handler.DrawGroundPolygon.html">csvector/handler.DrawGroundPolygon</a></li><li><a href="module-csvector_handler.DrawGroundPolylineEvent.html">csvector/handler.DrawGroundPolylineEvent</a></li><li><a href="module-csvector_handler.DrawGroundPolyline.html">csvector/handler.DrawGroundPolyline</a></li><li><a href="module-csvector_handler.ModifyVectorEvent.html">csvector/handler.ModifyVectorEvent</a></li><li><a href="module-csvector_handler.ModifyVector.html">csvector/handler.ModifyVector</a></li><li><a href="module-csvector_handler.SelectVectorEvent.html">csvector/handler.SelectVectorEvent</a></li><li><a href="module-csvector_handler.SelectVector.html">csvector/handler.SelectVector</a></li><li><a href="module-csvector.Icon.html">csvector.Icon</a></li><li><a href="module-csvector.Label.html">csvector.Label</a></li><li><a href="module-csvector.Model.html">csvector.Model</a></li><li><a href="module-csvector.MultiGlobePolyline.html">csvector.MultiGlobePolyline</a></li><li><a href="module-csvector.MultiGroundPolygon.html">csvector.MultiGroundPolygon</a></li><li><a href="module-csvector.MultiGroundPolyline.html">csvector.MultiGroundPolyline</a></li><li><a href="module-csvector.MultiPolygon.html">csvector.MultiPolygon</a></li><li><a href="module-csvector.MultiPolyline.html">csvector.MultiPolyline</a></li><li><a href="module-csvector.Pipe.html">csvector.Pipe</a></li><li><a href="module-csvector.Point.html">csvector.Point</a></li><li><a href="module-csvector.Polygon.html">csvector.Polygon</a></li><li><a href="module-csvector.PolygonVector.html">csvector.PolygonVector</a></li><li><a href="module-csvector.Polyline.html">csvector.Polyline</a></li><li><a href="module-csvector.PolylineVector.html">csvector.PolylineVector</a></li><li><a href="module-csvector.PrimitiveVector.html">csvector.PrimitiveVector</a></li><li><a href="module-csvector.Prism.html">csvector.Prism</a></li><li><a href="module-csvector.ScreenPoint.html">csvector.ScreenPoint</a></li><li><a href="module-csvector.Vector.html">csvector.Vector</a></li><li><a href="module-csvector.VectorLayer.html">csvector.VectorLayer</a></li><li><a href="module-csvector.Wall.html">csvector.Wall</a></li><li><a href="module-csplotting.AlgoSymbol.html">csplotting.AlgoSymbol</a></li><li><a href="module-csplotting.DotSymbol.html">csplotting.DotSymbol</a></li><li><a href="module-csplotting.GlobeDotSymbol.html">csplotting.GlobeDotSymbol</a></li><li><a href="module-csplotting_handler.DrawAlgoSymbolEvent.html">csplotting/handler.DrawAlgoSymbolEvent</a></li><li><a href="module-csplotting_handler.DrawAlgoSymbol.html">csplotting/handler.DrawAlgoSymbol</a></li><li><a href="module-csplotting_handler.DrawDotSymbolEvent.html">csplotting/handler.DrawDotSymbolEvent</a></li><li><a href="module-csplotting_handler.DrawDotSymbol.html">csplotting/handler.DrawDotSymbol</a></li><li><a href="module-csplotting_handler.ModifyPlottingSymbolEvent.html">csplotting/handler.ModifyPlottingSymbolEvent</a></li><li><a href="module-csplotting_handler.ModifyPlottingSymbol.html">csplotting/handler.ModifyPlottingSymbol</a></li><li><a href="module-csplotting_handler.SelectPlottingSymbolEvent.html">csplotting/handler.SelectPlottingSymbolEvent</a></li><li><a href="module-csplotting_handler.SelectPlottingSymbol.html">csplotting/handler.SelectPlottingSymbol</a></li><li><a href="module-csplotting.PlottingLayer.html">csplotting.PlottingLayer</a></li><li><a href="module-csplotting.PlottingSymbol.html">csplotting.PlottingSymbol</a></li><li><a href="module-csplotting.TextSymbol.html">csplotting.TextSymbol</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">事件<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-olview.html#.event:ChangeProjection">olview.event:ChangeProjection</a></li><li><a href="module-olview.html#.event:MoveStart">olview.event:MoveStart</a></li><li><a href="module-olview.html#.event:MoveEnd">olview.event:MoveEnd</a></li><li><a href="module-olvector_handler.html#.event:DrawCircleStart">olvector/handler.event:DrawCircleStart</a></li><li><a href="module-olvector_handler.html#.event:DrawCircleChange">olvector/handler.event:DrawCircleChange</a></li><li><a href="module-olvector_handler.html#.event:DrawCircleEnd">olvector/handler.event:DrawCircleEnd</a></li><li><a href="module-olvector_handler.html#.event:DrawPointEnd">olvector/handler.event:DrawPointEnd</a></li><li><a href="module-olvector_handler.html#.event:DrawPolygonStart">olvector/handler.event:DrawPolygonStart</a></li><li><a href="module-olvector_handler.html#.event:DrawPolygonChange">olvector/handler.event:DrawPolygonChange</a></li><li><a href="module-olvector_handler.html#.event:DrawPolygonEnd">olvector/handler.event:DrawPolygonEnd</a></li><li><a href="module-olvector_handler.html#.event:DrawPolylineStart">olvector/handler.event:DrawPolylineStart</a></li><li><a href="module-olvector_handler.html#.event:DrawPolylineChange">olvector/handler.event:DrawPolylineChange</a></li><li><a href="module-olvector_handler.html#.event:DrawPolylineEnd">olvector/handler.event:DrawPolylineEnd</a></li><li><a href="module-olvector_handler.html#.event:DrawRectangleStart">olvector/handler.event:DrawRectangleStart</a></li><li><a href="module-olvector_handler.html#.event:DrawRectangleChange">olvector/handler.event:DrawRectangleChange</a></li><li><a href="module-olvector_handler.html#.event:DrawRectangleEnd">olvector/handler.event:DrawRectangleEnd</a></li><li><a href="module-olvector_handler.html#.event:ModifyVectorStart">olvector/handler.event:ModifyVectorStart</a></li><li><a href="module-olvector_handler.html#.event:ModifyVectorChange">olvector/handler.event:ModifyVectorChange</a></li><li><a href="module-olvector_handler.html#.event:ModifyVectorEnd">olvector/handler.event:ModifyVectorEnd</a></li><li><a href="module-olvector_handler.html#.event:ModifyVectorShortStart">olvector/handler.event:ModifyVectorShortStart</a></li><li><a href="module-olvector_handler.html#.event:ModifyVectorShortEnd">olvector/handler.event:ModifyVectorShortEnd</a></li><li><a href="module-olvector_handler.html#.event:Selected">olvector/handler.event:Selected</a></li><li><a href="module-olplotting_handler.html#.event:DrawAlgoSymbolStart">olplotting/handler.event:DrawAlgoSymbolStart</a></li><li><a href="module-olplotting_handler.html#.event:DrawAlgoSymbolChange">olplotting/handler.event:DrawAlgoSymbolChange</a></li><li><a href="module-olplotting_handler.html#.event:DrawAlgoSymbolEnd">olplotting/handler.event:DrawAlgoSymbolEnd</a></li><li><a href="module-olplotting_handler.html#.event:DrawDotSymbolEnd">olplotting/handler.event:DrawDotSymbolEnd</a></li><li><a href="module-olplotting_handler.html#.event:ModifyPlottingSymbolStart">olplotting/handler.event:ModifyPlottingSymbolStart</a></li><li><a href="module-olplotting_handler.html#.event:ModifyPlottingSymbolChange">olplotting/handler.event:ModifyPlottingSymbolChange</a></li><li><a href="module-olplotting_handler.html#.event:ModifyPlottingSymbolEnd">olplotting/handler.event:ModifyPlottingSymbolEnd</a></li><li><a href="module-olplotting_handler.html#.event:ModifyPlottingSymbolShortStart">olplotting/handler.event:ModifyPlottingSymbolShortStart</a></li><li><a href="module-olvector_handler.html#.event:ModifyPlottingSymbolShortEnd">olvector/handler.event:ModifyPlottingSymbolShortEnd</a></li><li><a href="module-olplotting_handler.html#.event:Selected">olplotting/handler.event:Selected</a></li><li><a href="module-csview.html#.event:Loaded">csview.event:Loaded</a></li><li><a href="module-csview.html#.event:MoveStart">csview.event:MoveStart</a></li><li><a href="module-csview.html#.event:MoveEnd">csview.event:MoveEnd</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPointEnd">csvector/handler.event:DrawGroundPointEnd</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolygonStart">csvector/handler.event:DrawGroundPolygonStart</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolygonChange">csvector/handler.event:DrawGroundPolygonChange</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolygonEnd">csvector/handler.event:DrawGroundPolygonEnd</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolylineStart">csvector/handler.event:DrawGroundPolylineStart</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolylineChange">csvector/handler.event:DrawGroundPolylineChange</a></li><li><a href="module-csvector_handler.html#.event:DrawGroundPolylineEnd">csvector/handler.event:DrawGroundPolylineEnd</a></li><li><a href="module-csvector_handler.html#.event:ModifyVectorStart">csvector/handler.event:ModifyVectorStart</a></li><li><a href="module-csvector_handler.html#.event:ModifyVectorChange">csvector/handler.event:ModifyVectorChange</a></li><li><a href="module-csvector_handler.html#.event:ModifyVectorEnd">csvector/handler.event:ModifyVectorEnd</a></li><li><a href="module-csvector_handler.html#.event:Selected">csvector/handler.event:Selected</a></li><li><a href="module-csplotting_handler.html#.event:DrawAlgoSymbolStart">csplotting/handler.event:DrawAlgoSymbolStart</a></li><li><a href="module-csplotting_handler.html#.event:DrawAlgoSymbolChange">csplotting/handler.event:DrawAlgoSymbolChange</a></li><li><a href="module-csplotting_handler.html#.event:DrawAlgoSymbolEnd">csplotting/handler.event:DrawAlgoSymbolEnd</a></li><li><a href="module-csplotting_handler.html#.event:DrawDotSymbolEnd">csplotting/handler.event:DrawDotSymbolEnd</a></li><li><a href="module-csplotting_handler.html#.event:ModifyPlottingSymbolStart">csplotting/handler.event:ModifyPlottingSymbolStart</a></li><li><a href="module-csplotting_handler.html#.event:ModifyPlottingSymbolChange">csplotting/handler.event:ModifyPlottingSymbolChange</a></li><li><a href="module-csplotting_handler.html#.event:ModifyPlottingSymbolEnd">csplotting/handler.event:ModifyPlottingSymbolEnd</a></li><li><a href="module-csplotting_handler.html#.event:Selected">csplotting/handler.event:Selected</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜索" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: Handler</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="module-olview.html">olview</a>~</span>
+        
+        Handler
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="Handler"><span class="type-signature">&lt;abstract> </span>new Handler(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        控制器是控制用户与地图交互相关的操作，有各种控制器，比如常用的选择控制器，绘制长方形框控制器，绘制点控制器，绘制线控制器，绘制面控制器等。用户也可以继承Handler对象，实现自定义的控制器。
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hitTolerance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    10
+                
+                </td>
+            
+
+            <td class="description last">处理器在处理地图交互时的像素容差</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="module-events.Target.html">module:events.Target</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="getView"><span class="type-signature"></span>getView()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        获取当前控制器的视图对象
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getHitTolerance"><span class="type-signature"></span>getHitTolerance()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        获取像素容差
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setHitTolerance"><span class="type-signature"></span>setHitTolerance(value)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        设置像素容差
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">像素容差</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="initialize"><span class="type-signature"></span>initialize()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        当控制器被添加到视图中时，会调用此方法进行初始化相关的操作。用户自定义控制器，可以重写initialize方法，处理初始化相关操作。
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleEvent"><span class="type-signature">&lt;abstract> </span>handleEvent(mapBrowserEvent)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        处理地图事件，自定义控制器必须重写此方法，返回值会影响视图中其他控制器和地图默认操作是否生效。视图中可以有多个控制器，按照添加的先后顺序，地图事件会从后向前进行传递，如果当前控制器返回false或者默认不返回值，则会终止事件继续向前传递，那么在此控制器前面的控制器或者地图默认操作会接收不到地图事件而失效，返回true会继续传递地图事件。
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>mapBrowserEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ol.MapBrowserEvent</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">openlayers的地图事件</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    是否继续响应事件，返回false或者默认不返回值会终止事件继续向前传递.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        销毁控制器方法，不能由用户直接调用，如果要想销毁当前控制器，请调用视图的removeHandler方法当控制器从视图中移除时，会调用此方法进行资源销毁相关的操作。用户自定义控制器，可以重写destroy方法，处理资源销毁的相关操作。
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#destroy">module:events.Target#destroy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="dispatchEvent"><span class="type-signature"></span>dispatchEvent(event)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        发送事件消息，每个事件消息都有类型(type)，所有监听此对象对应类型事件的监听者都会接收到相应的事件消息
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type"><a href="module-events.Event.html">module:events.Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">事件对象</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="module-events.Target.html#dispatchEvent">module:events.Target#dispatchEvent</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#dispatchEvent">module:events.Target#dispatchEvent</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="on"><span class="type-signature"></span>on(type, listener [, opt_this])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        指定监听器监听指定类型的事件
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">事件类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">callback</span>
+|
+
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">监听器</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>opt_this</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    target
+                
+                </td>
+            
+
+            <td class="description last">在监听器中的`this`所指示的对象，默认是`target`自身</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="module-events.Target.html#on">module:events.Target#on</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#on">module:events.Target#on</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    监听器的唯一标识.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="once"><span class="type-signature"></span>once(type, listener [, opt_this])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        指定监听器只监听一次指定类型的事件
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">事件类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">callback</span>
+|
+
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">监听器</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>opt_this</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    target
+                
+                </td>
+            
+
+            <td class="description last">在监听器中的`this`所指示的对象，默认是`target`自身</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="module-events.Target.html#once">module:events.Target#once</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#once">module:events.Target#once</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    监听器的唯一标识.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="un"><span class="type-signature"></span>un(type, listener [, opt_this])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        取消指定监听器监听指定类型的事件
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">事件类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">callback</span>
+|
+
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">监听器</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>opt_this</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    target
+                
+                </td>
+            
+
+            <td class="description last">在监听器中的`this`所指示的对象，默认是`target`自身</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="module-events.Target.html#un">module:events.Target#un</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#un">module:events.Target#un</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="unByKey"><span class="type-signature"></span>unByKey(key)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        根据监听器的唯一标识取消指定监听器监听事件，监听器的唯一标识通过`on()`或者`once()`返回得到
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array.&lt;Object></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">监听器的唯一标识，通过`on()`或者`once()`返回得到，可以是多个监听器的唯一标识数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="module-events.Target.html#unByKey">module:events.Target#unByKey</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="module-events.Target.html#unByKey">module:events.Target#unByKey</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">搜索结果</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	版权所有 (c)2021-2026 广东数字生态
+	</span>
+
+</footer>
+
+<script src="static/js/docstrap.lib.js"></script>
+<script src="static/js/toc.js"></script>
+
+    <script type="text/javascript" src="static/js/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+<script>
+	$( function () {
+		$( '#main' ).localScroll( {
+			offset : { top : 60 } //offset by the height of your header (give or take a few px, see what works for you)
+		} );
+		$( "dt.name" ).each( function () {
+			var $this = $( this ).find("h4");
+			var icon = $( "<i/>" ).addClass( "icon-plus-sign" ).addClass( "pull-right" ).addClass( "icon-white" );
+			var dt = $(this);
+			var children = dt.next( "dd" );
+
+			dt.prepend( icon ).css( {cursor : "pointer"} );
+			dt.addClass( "member-collapsed" ).addClass( "member" );
+
+
+			children.hide();
+
+			dt.children().on( "click", function () {
+				children = dt.next( "dd" );
+				children.slideToggle( "fast", function () {
+
+					if ( children.is( ":visible" ) ) {
+						icon.addClass( "icon-minus-sign" ).removeClass( "icon-plus-sign" ).removeClass( "icon-white" );
+						dt.addClass( "member-open" ).animate( "member-collapsed" );
+					} else {
+						icon.addClass( "icon-plus-sign" ).removeClass( "icon-minus-sign" ).addClass( "icon-white" );
+						dt.addClass( "member-collapsed" ).removeClass( "member-open" );
+					}
+				} );
+			} );
+
+		} );
+	} );
+</script>
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

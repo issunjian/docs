@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,V as p}from"./chunks/framework.c6d8cbec.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"backend/db/约束.md","filePath":"backend/db/约束.md"}'),l={name:"backend/db/约束.md"},o=p("",388),e=[o];function c(t,r,y,F,E,i){return a(),n("div",null,e)}const A=s(l,[["render",c]]);export{C as __pageData,A as default};
